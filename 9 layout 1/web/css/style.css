@@ -1,0 +1,48 @@
+/* css 파일에 있는 한글 깨짐 방지 */
+@charset "utf-8";
+
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+/* 레이아웃 */
+#wrap {
+}
+#header {
+  height: 325px;
+  background-color: lightpink;
+}
+#content {
+  height: 800px;
+  background-color: rgb(199, 141, 150);
+}
+#footer {
+  height: 200px;
+  background-color: rgb(141, 99, 105);
+}
+
+/* 컨텐츠 레이아웃 */
+#content-nav {
+  height: 200px;
+  background-color: rgb(179, 224, 241);
+}
+#content-title {
+  height: 200px;
+  background-color: rgb(163, 206, 221);
+}
+#content-banner {
+  height: 200px;
+  background-color: rgb(145, 183, 197);
+}
+#content-content {
+  height: 200px;
+  background-color: rgb(121, 152, 163);
+}
+/* 컨테이너 */
+.container {
+  width: 990px;
+  margin: 0 auto;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+}
