@@ -32,7 +32,9 @@
 }
 #header {
   height: 325px;
-  background-color: lightpink;
+  /* 배경 이미지를 가운데 위쪽에 고정 -> center top */
+  /* 배경 이미지가 수직 방향으로 반복되는것을 x축 방향으로 반복되도록 -> repeat-x */
+  background: url(../image/header_bg.jpg) center top repeat-x;
 }
 #content {
   height: 800px;
