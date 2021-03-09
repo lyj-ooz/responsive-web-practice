@@ -69,3 +69,25 @@
   height: inherit;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* 헤더 */
+.header {
+}
+.header .header-menu {
+  text-align: right;
+}
+.header .header-menu a {
+  color: #fff;
+  padding: 10px 0px 10px 13px;
+  /* a태그는 inline 속성이기 때문에 위, 아래 패딩이 적용되지 않음 
+  그래서 display 속성을 inline-block으로 바꿔준다*/
+  display: inline-block;
+}
+.header .header-menu a:hover {
+  color: #666;
+}
+
+.header .header-title {
+}
+.header .header-icon {
+}
