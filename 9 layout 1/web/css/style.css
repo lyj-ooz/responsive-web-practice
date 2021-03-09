@@ -6,6 +6,27 @@
   padding: 0;
 } */
 
+/* 스킵 네비게이션 */
+#skip {
+  position: relative;
+}
+#skip a {
+  position: absolute;
+  left: 0px;
+  top: -40px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #333;
+  line-height: 30px;
+  width: 140px;
+  text-align: center;
+}
+#skip a:active,
+#skip a:focus {
+  /* 탭 키 눌렀을때...-> active, focus */
+  top: 0px;
+}
+
 /* 레이아웃 */
 #wrap {
 }
