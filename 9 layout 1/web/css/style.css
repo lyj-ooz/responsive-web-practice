@@ -47,12 +47,12 @@
 
 /* 컨텐츠 레이아웃 */
 #content-nav {
-  /* height: 200px;
-  background-color: rgb(179, 224, 241); */
+  /* height: 200px; */
+  background-color: #f6fdff;
 }
 #content-title {
-  height: 200px;
-  background-color: rgb(163, 206, 221);
+  /* height: 200px; */
+  background-color: #eaf7fd;
 }
 #content-banner {
   height: 200px;
@@ -67,7 +67,7 @@
   width: 990px;
   margin: 0 auto;
   height: inherit;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 /* 헤더 */
@@ -187,4 +187,26 @@
 }
 .nav > div ol li a:hover {
   text-decoration: underline;
+}
+
+/* 타이틀 */
+.title {
+  position: relative;
+}
+.title h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  color: #2c94c4;
+  font-family: "Do Hyeon", sans-serif;
+}
+.title .btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../image/icon.png) no-repeat 0 -600px;
+  /* background-position: 0 -600px; */
 }
