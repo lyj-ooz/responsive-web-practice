@@ -37,8 +37,8 @@
   background: url(../image/header_bg.jpg) center top repeat-x;
 }
 #content {
-  height: 800px;
-  background-color: rgb(199, 141, 150);
+  /* height: 800px;
+  background-color: rgb(199, 141, 150); */
 }
 #footer {
   height: 200px;
@@ -47,8 +47,8 @@
 
 /* 컨텐츠 레이아웃 */
 #content-nav {
-  height: 200px;
-  background-color: rgb(179, 224, 241);
+  /* height: 200px;
+  background-color: rgb(179, 224, 241); */
 }
 #content-title {
   height: 200px;
@@ -146,4 +146,45 @@
 }
 .header .header-icon a.icon4:hover {
   background-position: -60px -180px;
+}
+
+/* 전체 메뉴 */
+.nav {
+  overflow: hidden;
+  padding: 30px 0;
+}
+/* float:left로 인한 영역 깨짐(height 0이 되어서..) 해결 방법
+    1. 깨지는 영역에 똑같이 float:left를 준다 -> 모든 박스에 다 float:left 를 해야하기 때문에 곤란함.
+    2. float의 성질을 차단하는 clear:both 사용 -> 어떤 영역이 깨졌는지 찾기 어려움..
+    3. float을 사용한 박스의 상위 박스한테 overflow: hidden을 사용
+    4. clearfix를 사용 (best)
+*/
+.nav > div {
+  float: left;
+  width: 40%;
+}
+.nav > div:last-child {
+  /* ** 'last-child'는 ie9부터 사용 가능*/
+  width: 20%;
+}
+.nav > div.last {
+  width: 20%;
+}
+.nav > div h3 {
+  font-size: 18px;
+  color: #25abd0;
+  margin-bottom: 4px;
+}
+.nav > div ol {
+  overflow: hidden;
+}
+.nav > div ol li {
+  float: left;
+  width: 50%;
+}
+.nav > div.last ol li {
+  width: 100%;
+}
+.nav > div ol li a:hover {
+  text-decoration: underline;
 }
