@@ -108,3 +108,33 @@ h6 {
   line-height: 0;
   text-indent: -9999px;
 }
+
+/* margin, padding */
+.mt-10 {
+  margin-top: 10px;
+  /* !important; */ /* !important 써도 되는가...? */
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-35 {
+  margin-top: 35px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-45 {
+  margin-top: 45px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
