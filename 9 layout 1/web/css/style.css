@@ -536,7 +536,7 @@
 .notice-hover li a span em {
   position: absolute;
   left: 0;
-  right: 0;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   width: 100%;
@@ -550,6 +550,55 @@
 
 .notice-hover li a strong {
   padding-top: 3px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* 마우스 오버효과 2 Mouse Hover */
+.notice-hover2 {
+}
+.notice-hover2 h4 {
+}
+.notice-hover2 ul {
+  overflow: hidden;
+}
+.notice-hover2 li {
+  float: left;
+  width: 93px;
+  text-align: center;
+  margin-right: 5px;
+}
+.notice-hover2 li:last-child {
+  margin-right: 0;
+}
+.notice-hover2 li.last {
+  margin-right: 0;
+}
+.notice-hover2 li a {
+}
+.notice-hover2 li a span {
+  position: relative;
+  display: block;
+  width: 93px;
+  height: 93px;
+}
+.notice-hover2 li a span img {
+  width: 100%;
+}
+.notice-hover2 li a span em {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+  visibility: hidden;
+}
+.notice-hover2 li a span:hover em {
+  visibility: visible;
+}
+.notice-hover2 li a strong {
+  margin-top: 3px;
   display: inline-block;
   font-size: 12px;
 }
