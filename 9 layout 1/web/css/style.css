@@ -59,8 +59,8 @@
   background-color: #dcdff7;
 }
 #content-content {
-  height: 200px;
-  background-color: rgb(121, 152, 163);
+  /* height: 200px; */
+  background-color: #f6fdff;
 }
 /* 컨테이너 */
 .container {
@@ -270,4 +270,134 @@
 }
 .ban ul li.ban_img3 {
   text-align: right;
+}
+
+/* 컨텐츠 */
+.cont {
+  overflow: hidden;
+  padding-top: 30px;
+}
+.cont .column {
+  position: relative;
+
+  width: 289px;
+  height: 363px;
+  float: left;
+  margin: 0 30px 30px 0;
+  padding-right: 30px;
+}
+.cont .col1 {
+  border-right: 1px solid #c8c8c8;
+}
+.cont .col2 {
+  border-right: 1px solid #c8c8c8;
+}
+.cont .col3 {
+  margin-right: 0;
+  padding-right: 0;
+}
+.cont .col4 {
+  border-right: 1px solid #c8c8c8;
+}
+.cont .col5 {
+  border-right: 1px solid #c8c8c8;
+}
+.cont .col6 {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.cont .column .ico_img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../image/icon.png) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cont .column .ico_title {
+  padding-left: 70px;
+  font-size: 16px;
+  color: #2c94c4;
+}
+.cont .column .ico_desc {
+  padding-left: 70px;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.cont .col1 .ico_img {
+  background-position: 0px -240px;
+}
+.cont .col2 .ico_img {
+  background-position: 0px -300px;
+}
+.cont .col3 .ico_img {
+  background-position: 0px -360px;
+}
+.cont .col4 .ico_img {
+  background-position: 0px -420px;
+}
+.cont .col5 .ico_img {
+  background-position: 0px -480px;
+}
+.cont .col6 .ico_img {
+  background-position: 0px -540px;
+}
+
+.cont .col1 .ico_img:hover {
+  background-position: -60px -240px;
+}
+.cont .col2 .ico_img:hover {
+  background-position: -60px -300px;
+}
+.cont .col3 .ico_img:hover {
+  background-position: -60px -360px;
+}
+.cont .col4 .ico_img:hover {
+  background-position: -60px -420px;
+}
+.cont .col5 .ico_img:hover {
+  background-position: -60px -480px;
+}
+.cont .col6 .ico_img:hover {
+  background-position: -60px -540px;
+}
+
+/* 게시판 */
+.notice {
+  position: relative;
+}
+.notice h4 {
+  font-size: 14px;
+  color: #0093bd;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+.notice ul {
+}
+.notice ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: url(../image/dot.gif) no-repeat 0 8px;
+  padding-left: 8px;
+}
+.notice ul li a {
+  font-size: 12px;
+}
+
+.notice a.more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background: url(../image/icon.png) -150px -90px;
+  width: 17px;
+  height: 17px;
+}
+.notice a.more:hover {
+  background-position: -167px -90px;
 }
