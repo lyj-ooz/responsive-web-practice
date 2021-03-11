@@ -495,3 +495,61 @@
 .notice3 a.more:hover {
   background-position: -167px -90px;
 }
+
+/* 마우스 오버효과 1 Mouse Hover */
+.notice-hover {
+}
+.notice-hover h4 {
+  font-size: 14px;
+  color: #0093bd;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+.notice-hover ul {
+  overflow: hidden;
+}
+.notice-hover li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+.notice-hover li:last-child {
+  margin-right: 0;
+}
+.notice-hover li.last {
+  margin-right: 0;
+}
+
+.notice-hover li a {
+}
+.notice-hover li a span {
+  position: relative;
+  display: block;
+  width: 93px;
+  height: 93px;
+  line-height: 93px;
+}
+.notice-hover li a span img {
+  width: 100%;
+}
+.notice-hover li a span em {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.notice-hover li a span:hover em {
+  visibility: visible;
+}
+
+.notice-hover li a strong {
+  padding-top: 3px;
+  display: inline-block;
+  font-size: 12px;
+}
