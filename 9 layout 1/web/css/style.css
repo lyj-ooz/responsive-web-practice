@@ -55,8 +55,8 @@
   background-color: #eaf7fd;
 }
 #content-banner {
-  height: 200px;
-  background-color: rgb(145, 183, 197);
+  /* height: 200px; */
+  background-color: #dcdff7;
 }
 #content-content {
   height: 200px;
@@ -209,4 +209,65 @@
   height: 60px;
   background: url(../image/icon.png) no-repeat 0 -600px;
   /* background-position: 0 -600px; */
+}
+
+/* 배너 */
+.ban {
+  position: relative;
+  padding: 24px 0 20px 0;
+}
+.ban a.prev {
+  position: absolute;
+  left: -60px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: url(../image/icon.png) no-repeat -150px 0;
+}
+.ban a.next {
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  width: 43px;
+  height: 43px;
+  background: url(../image/icon.png) no-repeat -150px -43px;
+}
+.ban a.prev:hover {
+  background-position: -193px 0;
+}
+.ban a.next:hover {
+  background-position: -193px -43px;
+}
+.ban ul {
+  overflow: hidden;
+}
+.ban ul li {
+  float: left;
+  width: 330px;
+}
+.ban ul li img {
+  /* display: block; */
+  border: 4px solid #dcdcdc;
+}
+.ban ul li img:hover {
+  /* display: block; */
+  border-color: #98dcdc;
+}
+.ban ul li:nth-child(2) {
+  /*nth-child: ie9부터 적용*/
+  text-align: center;
+}
+.ban ul li:last-child {
+  /*last-child: ie9부터 적용*/
+  text-align: right;
+}
+
+.ban ul li.ban_img1 {
+  text-align: left;
+}
+.ban ul li.ban_img2 {
+  text-align: center;
+}
+.ban ul li.ban_img3 {
+  text-align: right;
 }
