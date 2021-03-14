@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout3_1</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      #wrap {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      header {
+        /* width: 1200px; 대신에 아래처럼..*/
+        width: 100%;
+        height: 150px;
+        background-color: green;
+      }
+      aside {
+        width: 30%;
+        height: 700px;
+        background-color: rgb(96, 182, 96);
+        float: left;
+      }
+      section {
+        width: 70%;
+        height: 700px;
+        background-color: rgb(78, 138, 98);
+        float: left;
+      }
+      footer {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(0, 73, 24);
+        clear: both;
+      }
+
+      /* 화면 너비가 769~1220px */
+      @media (max-width: 1220px) {
+        /* #wrap의 너비가 1200px이기 때문에 여기 media query 부분에서도 max-width가 1200px이면 스크롤바가 생길 수 있어서 살짝 크게.. */
+        /* 반응형에서는 스크롤바가 생기면 안된다! */
+        #wrap {
+          width: 90%;
+        }
+      }
+      /* 화면 너비가 0~768px */
+      @media (max-width: 768px) {
+        #wrap {
+          width: 100%;
+        }
+      }
+      /* 화면 너비가 0~480px */
+      @media (max-width: 480px) {
+        #wrap {
+          width: 100%;
+        }
+        aside,
+        section {
+          float: none;
+          width: 100%;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header></header>
+      <aside></aside>
+      <section></section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
