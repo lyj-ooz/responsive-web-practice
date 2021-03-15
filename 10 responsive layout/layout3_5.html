@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout3_5</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #wrap {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      #header {
+        height: 100px;
+        background-color: #b3defe;
+      }
+      #banner {
+        height: 400px;
+        background-color: #7ecdfd;
+      }
+      #content1 {
+        overflow: hidden;
+      }
+      #content1 .nav {
+        width: 30%;
+        float: left;
+        height: 500px;
+        background-color: #43b5fc;
+      }
+      #content1 .article_right1 {
+        width: 70%;
+        float: left;
+        height: 250px;
+        background-color: #00a5fb;
+      }
+      #content1 .article_right2 {
+        width: 70%;
+        float: left;
+        height: 250px;
+        background-color: #0096fa;
+      }
+
+      #content2 {
+        overflow: hidden;
+      }
+
+      #content2 .article_box1 {
+        float: left;
+        width: 33.3%;
+        height: 300px;
+        background-color: #0088ec;
+      }
+      #content2 .article_box2 {
+        float: left;
+        width: 33.3%;
+        height: 300px;
+        background-color: #0076d9;
+      }
+      #content2 .article_box3 {
+        float: left;
+        width: 33.3%;
+        height: 300px;
+        background-color: #0064c6;
+      }
+
+      #content3 {
+        overflow: hidden;
+        padding: 5%;
+        background-color: #00a6fc;
+      }
+
+      #content3 .article_square1 {
+        float: left;
+        width: 23%;
+        height: 200px;
+        margin: 1%;
+        border-radius: 10px;
+        background-color: #0076d9;
+      }
+
+      #content3 .article_square2 {
+        float: left;
+        width: 23%;
+        height: 200px;
+        margin: 1%;
+        border-radius: 10px;
+        background-color: #0076d9;
+      }
+
+      #content3 .article_square3 {
+        float: left;
+        width: 23%;
+        height: 200px;
+        margin: 1%;
+        border-radius: 10px;
+        background-color: #0076d9;
+      }
+
+      #content3 .article_square4 {
+        float: left;
+        width: 23%;
+        height: 200px;
+        margin: 1%;
+        border-radius: 10px;
+        background-color: #0076d9;
+      }
+
+      #footer {
+        height: 100px;
+        background-color: #43b5fc;
+      }
+
+      /* 화면 너비 0~1200px */
+      @media (max-width: 1240px) {
+        #wrap {
+          width: 100%;
+        }
+        #content2 .article_box1,
+        #content2 .article_box2 {
+          width: 50%;
+        }
+
+        #content2 .article_box3 {
+          display: none;
+        }
+
+        #content3 .article_square1,
+        #content3 .article_square2,
+        #content3 .article_square3 {
+          width: 31.333%;
+        }
+
+        #content3 .article_square4 {
+          display: none;
+        }
+      }
+
+      /* 화면 너비 0~768px */
+      @media (max-width: 768px) {
+        #content2 .article_box1,
+        #content2 .article_box2 {
+          width: 100%;
+        }
+      }
+
+      /* 화면 너비 0~480px */
+      @media (max-width: 480px) {
+        #content1 .nav {
+          width: 100%;
+          height: 200px;
+        }
+        #content1 .article_right1 {
+          width: 100%;
+          height: 200px;
+        }
+        #content1 .article_right2 {
+          width: 100%;
+          height: 200px;
+        }
+        #content3 .article_square1,
+        #content3 .article_square2,
+        #content3 .article_square3 {
+          width: 98%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 전체적인 틀을 잡을 때는 id를 주로 사용하고, 
+        그보다 좀 더 세부적으로, 반복적으로 잡을때는 class를 사용
+        (어차피 각자 사람에 따라 다르긴 하지만..)
+    -->
+
+    <div id="wrap">
+      <header id="header"></header>
+      <section id="banner"></section>
+      <section id="content1">
+        <nav class="nav"></nav>
+        <article class="article_right1"></article>
+        <article class="article_right2"></article>
+      </section>
+      <section id="content2">
+        <article class="article_box1"></article>
+        <article class="article_box2"></article>
+        <article class="article_box3"></article>
+      </section>
+      <section id="content3">
+        <article class="article_square1"></article>
+        <article class="article_square2"></article>
+        <article class="article_square3"></article>
+        <article class="article_square4"></article>
+      </section>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>
