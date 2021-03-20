@@ -316,10 +316,23 @@ section#section2 {
   font-size: 0;
 }
 
-/*  */
+/* 섹션 id: section3 */
 section#section3 {
-  height: 300px;
-  background-color: #388e3c;
+  height: 470px;
+  background-color: rgb(237, 245, 248);
+}
+
+section#section3 .container {
+}
+
+section#section3 .container p {
+  margin: 0 auto;
+  width: 740px;
+  font-family: "Raleway", sans-serif;
+  color: #3a606c;
+  line-height: 48px;
+  font-size: 30px;
+  padding-top: 120px;
 }
 
 /*  */
