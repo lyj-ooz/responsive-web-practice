@@ -1,0 +1,108 @@
+/* reset */
+h1, h2, p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+figure, blockquote, figcaption {
+  padding: 0;
+  margin: 0;
+}
+
+/* body */
+body {
+  box-sizing: border-box;
+}
+
+/* wrapper */
+#wrapper {
+  background-color: #eee;
+  color: #333;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+header #title {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+/* main */
+#main #img-div{
+/*   margin: 0 auto; */
+/*   width: 93%; */
+  background-color: #fff;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 30px 25px 15px 25px;
+}
+#main #img-div figure #image{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+#main #tribute-info{
+  max-width: 600px;
+  margin: 50px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main #tribute-info #life h2{
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+#main #tribute-info #life div ul{
+  padding-left: 17px;
+}
+
+#main #tribute-info #life div li{
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+#main #tribute-info #quote{
+  max-width: 500px;
+  margin-top: 60px;
+  font-style: italic;
+}
+
+#main #tribute-info #quote figure blockquote{
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 0 10px 50px 10px;
+}
+
+footer p {
+/*   font-size: 19px; */
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+footer p a#tribute-link{
+  color: #608afa;
+}
+
+@media (max-width: 400px) {
+  #main #tribute-info #life h2{
+    font-size: 1.3em;
+  }
+  
+}
